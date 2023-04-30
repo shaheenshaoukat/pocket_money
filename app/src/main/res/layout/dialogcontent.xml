@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:background="@drawable/wavetop"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="Update Data"
+
+        android:layout_margin="20dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/mycll"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Image URL"
+        android:id="@+id/image"
+        android:background="@color/mycll"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:layout_margin="20dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/mycll"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/name"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="product price"
+        android:layout_margin="20dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/mycll"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/proprc"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="product name"
+        android:layout_margin="20dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/mycll"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/productname"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/usubmit"
+        android:background="@color/mycll"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    </LinearLayout>
+
+
+</ScrollView>

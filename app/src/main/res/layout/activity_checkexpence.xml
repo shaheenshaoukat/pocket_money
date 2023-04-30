@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wavetop"
+    tools:context=".checkexpence">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:id="@+id/totalmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Money"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/totaldays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Days"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@id/totalmoney"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/usemoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaning Money"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@id/totaldays"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvtotalmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvtotaldays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="00"
+            android:layout_marginRight="20dp"
+
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totalmoney" />
+
+        <TextView
+            android:id="@+id/remaingmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="00"
+            android:layout_marginRight="20dp"
+
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/totaldays" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
